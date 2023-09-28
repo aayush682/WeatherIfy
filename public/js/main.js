@@ -18,7 +18,7 @@ const getInfo = async (event) => {
 
         // Hide loading animation
         document.getElementById('loading').style.opacity = 0;
-        console.log(data);
+        // console.log(data);
         if (data.name === undefined) {
             alert("Please enter a valid city name");
         }
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const hours = now.getHours().toString().padStart(2, '0');
         const minutes = now.getMinutes().toString().padStart(2, '0');
         const amPm = hours >= 12 ? 'PM' : 'AM';
-        console.log(amPm);
+        // console.log(amPm);
         const formattedHours = (hours % 12) || 12;
 
         const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
