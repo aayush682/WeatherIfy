@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* font-family: "Source Code Pro", monospace; */
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(205, 226, 245, 0.315);
+}
+
+:root {
+  --main-bg: #1e272e;
+  --main-color: #0097e6;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+  scroll-behavior: smooth;
+}
+
+/* Navbar CSS */
+
+.row {
+  margin: 0;
+}
+
+.main_menu {
+  background: var(--main-bg);
+}
+.navbar {
+  background: var(--main-bg);
+  color: white;
+  padding: 2rem 0;
+}
+.navbar-brand i {
+  padding: 1rem;
+}
+
+.navbar li {
+  margin-left: 2rem;
+}
+.navbar a {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.navbar a:hover {
+  background-color: white;
+  color: var(--main-bg);
+  border-radius: 10%;
+}
+
+.navbar-toggler {
+  background-color: white;
+}
+
+/* Main Header CSS */
+
+.main_header {
+  margin-top: auto;
+}
+.main_header_left {
+  height: 70rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.main_header_left::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/weather-app.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: 0.45;
+}
+
+.main_header_left p {
+  font-size: 5rem;
+  text-shadow: 4px 6px 1px rgba(0, 0, 0, 0.3);
+  text-transform: capitalize;
+  font-weight: 500;
+  font-family: "Pacifico", cursive;
+  color: var(--main-bg);
+}
+.main_header_left h1 {
+  font-size: 3rem;
+  margin: 1.5rem 0 4rem 0;
+  text-transform: capitalize;
+  padding: 1rem;
+}
+.main_header_left button {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  background-color: var(--main-color);
+  border: none;
+  box-shadow: 0 8px 6px -6px #000;
+  outline: none;
+}
+.main_header_left button:hover {
+  background-color: var(--main-bg);
+  color: var(--main-color);
+  font-size: 2rem;
+  padding: 0.8rem 1.8rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  border: none;
+  box-shadow: 0 8px 6px -6px var(--main-color);
+  transition: all 0.3s linear;
+  outline: none;
+}
+.main_header_left span {
+  font-family: "Homemade Apple", cursive;
+  color: var(--main-color);
+}
+.main_header_right {
+  height: 70rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Footer CSS */
+footer {
+  width: 100%;
+  background-color: var(--main-bg);
+  margin-top: auto;
+}
+
+.card {
+  background-color: var(--main-bg);
+  text-transform: capitalize;
+}
+.card-title {
+  font-size: 3.5rem;
+}
+.card-body {
+  font-size: 2rem;
+  color: white;
+}
+
+.card-body a {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  background-color: white;
+  color: var(--main-bg);
+  border: none;
+  box-shadow: 0 6px 6px -6px var(--main-bg);
+  outline: none;
+}
+
+.card-body a:hover {
+  background-color: var(--main-bg);
+  transition: all 0.3s linear;
+  color: var(--main-color);
+  font-size: 1rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  border: none;
+  box-shadow: 0 8px 6px -6px var(--main-color);
+  outline: none;
+}
+
+/*======================
+    404 page
+=======================*/
+
+.page_404 {
+  display: flex;
+  padding: 40px 0;
+  font-family: "Arvo", serif;
+}
+
+.page_404 img {
+  width: 100%;
+}
+
+.four_zero_four_bg {
+  background-image: url(../images/dribbble_1.gif);
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.four_zero_four_bg h1 {
+  font-size: 80px;
+}
+
+.four_zero_four_bg h3 {
+  font-size: 80px;
+}
+
+.link_404 {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  background-color: white;
+  color: var(--main-bg);
+  border: none;
+  box-shadow: 0 6px 6px -6px var(--main-bg);
+  outline: none;
+}
+
+.link_404:hover {
+  text-decoration: none;
+  background-color: var(--main-bg);
+  transition: all 0.3s linear;
+  color: var(--main-color);
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  border: none;
+  box-shadow: 0 8px 6px -6px var(--main-color);
+  outline: none;
+}
+.contant_box_404 {
+  margin-top: -50px;
+}
+
+/* Weather Page CSS */
+
+.temp_form input {
+  font-size: 2.5rem;
+  text-align: center;
+  box-shadow: 0px 8px 16px 4px #9e9e9e;
+}
+
+.temp_form #cityName {
+  border-radius: 1rem 0 0 1rem;
+}
+
+.temp_form #submitBtn {
+  padding: 0 2rem;
+  border-radius: 0 1rem 1rem 0;
+  background-color: var(--main-color);
+  border: none;
+  outline: none;
+  color: var(--main-bg);
+}
+.temp_form #submitBtn:hover {
+  transition: all 0.3s ease-in;
+  background-color: var(--main-bg);
+  color: var(--main-color);
+}
+
+.card-weather {
+  color: white;
+  /* background-image: url("https://mdbgo.io/ascensus/mdb-advanced/img/snow.gif"); */
+  background-size: cover;
+  width: 80rem;
+  max-width: 100rem;
+  height: 45rem;
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px 4px #9e9e9e;
+}
+
+.card-weather .location {
+  font-size: 4rem;
+}
+
+.time-font {
+  text-align: end;
+  font-size: 6rem;
+}
+
+.date-font {
+  text-align: end;
+  font-size: 2rem;
+}
+
+.sm-font {
+  font-size: 18px;
+}
+
+.med-font {
+  font-size: 28px;
+}
+
+.large-font {
+  font-size: 60px;
+}
+
+/*Responsive CSS */
+@media (max-width: 786px) {
+  .main_header_left {
+    height: auto;
+    margin: 5rem 0;
+  }
+  .main_header_left p {
+    font-size: 3.5rem;
+  }
+  .main_header_left h1 {
+    font-size: 2rem;
+  }
+  .main_header_right {
+    display: none;
+    /* height: auto;
+    margin-top: 3rem 0; */
+  }
+  .card-weather .location {
+    font-size: 4rem;
+  }
+
+  .large-font {
+    font-size: 50px;
+  }
+}
+.loading-animation {
+  border: 4px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  border-top: 4px solid #000;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+  opacity: 0; /* Initially set opacity to 0 */
+  transition: opacity 1s ease;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

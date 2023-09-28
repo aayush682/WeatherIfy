@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerLinks}}
+</head>
+
+<body>
+    {{>navbar}}
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="col-md-4 col-12 mx-auto">
+                    <form class="temp_form mt-5">
+                        <div class="input-group">
+                            <input type="text" class="form-control" autocomplete="off" id="cityName"
+                                placeholder="Enter Your Location" />
+                            <input type="submit" value="Search" id="submitBtn" />
+                        </div>
+                    </form>
+                </div>
+                <div class="row d-flex justify-content-center p-5">
+                    <div class="card-weather" id="wrapper-bg">
+                        <h1 class="ml-4 location mt-3" id="city_nameDisplay"></h1>
+                        <p class=" med-font ml-4" id="weatherCondition"></p>
+                        <h1 class=" large-font ml-4" id="temp"></h1>
+                        <div id="loading" class="loading-animation"></div>
+                        <p class="time-font mr-4 mt-2" id="time"><span class="sm-font" id="am_pm"></span>
+                        </p>
+                        <p class="date-font mr-3" id="date"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {{>footer}}
+</body>
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>
